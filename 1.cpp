@@ -18,23 +18,36 @@ int main() {
     //     cout << arr[i] << " ";
     // }
     
-    int arr[5];
-    int n = 5;
-    for(int i =0; i<n; i++){
-        cout<< "enter the number for index:" <<i << " ";
-        cin >> arr[i];
-    }
-    // printing the array 
-    cout << "Array = [";
-    for(int i =0; i<n; i++){
+    // int arr[5];
+    // int n = 5;
+    // for(int i =0; i<n; i++){
+    //     cout<< "enter the number for index:" <<i << " ";
+    //     cin >> arr[i];
+    // }
+    // // printing the array 
+    // cout << "Array = [";
+    // for(int i =0; i<n; i++){
     
-        cout<<arr[i] << " ";
+    //     cout<<arr[i] << " ";
+    // }
+    // cout << "]" << endl;
+    // int sum = 0 ;
+    // for(int i = 0; i<n; i++){
+    //     sum = sum + arr[i];
+    // }
+    // cout << "Sum of all array is: " << sum;
+
+    int arr[5]= {1, 2, 3, 4, 5 };
+    int target = 5;
+    int n = 5;
+    for(int i = 0; i< n; i++){
+        if(target == arr[i]){
+            cout<< "target found";
+            break;
+        }
+        // else{
+        //     cout<<"Target nout found";
+        // }
     }
-    cout << "]" << endl;
-    int sum = 0 ;
-    for(int i = 0; i<n; i++){
-        sum = sum + arr[i];
-    }
-    cout << "Sum of all array is: " << sum;
     return 0;
 }
