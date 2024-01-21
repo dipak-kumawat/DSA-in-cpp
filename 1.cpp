@@ -37,17 +37,32 @@ int main() {
     // }
     // cout << "Sum of all array is: " << sum;
 
-    int arr[5]= {1, 2, 3, 4, 5 };
-    int target = 5;
-    int n = 5;
-    for(int i = 0; i< n; i++){
-        if(target == arr[i]){
-            cout<< "target found";
-            break;
+    // int arr[5]= {1, 2, 3, 4, 5 };
+    // int target = 5;
+    // int n = 5;
+    // for(int i = 0; i< n; i++){
+    //     if(target == arr[i]){
+    //         cout<< "target found";
+    //         break;
+    //     }
+    //     // else{
+    //     //     cout<<"Target nout found";
+    //     // }
+    // }
+
+    int arr[10] = {1, 1, 1, 0, 0 ,0, 0 ,1,1 , 1};
+    int zeroCount = 0;
+    int OneCount = 0;
+    int n = 10;
+    for (int i = 0; i<n; i++ ){
+        if(1 == arr[i]){
+            OneCount++;
         }
-        // else{
-        //     cout<<"Target nout found";
-        // }
+        if(0 == arr[i]){
+            zeroCount++;
+        }
     }
+    cout<<"total number of zero: "<<zeroCount<<endl;
+    cout<< "Total Number o one: "<< OneCount<<endl;
     return 0;
 }
