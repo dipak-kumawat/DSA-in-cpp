@@ -1,10 +1,27 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
+void print(vector<int>v){
+    int size = v.size();
+    cout<<"size of array is "<<size<<endl;
+    for (int i = 0; i < size; i++)
+    {
+        cout<<v[i]<<endl;
+
+    }
+    
+}
+
 int main(){
-//  static type of array 
-int arr[5] = {1, 2, 3, 4, 5};
-cout<<arr<<endl;
-fun(arr, 5);
+
+    // use of vector function in array 
+vector<int>v;
+v.push_back(12);
+v.push_back(12);
+v.push_back(12);
+v.push_back(12);
+
+print(v);
 
 }
