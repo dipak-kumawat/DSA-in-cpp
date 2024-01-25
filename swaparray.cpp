@@ -16,7 +16,7 @@ void swapArray(int index[], int n){
 
 int main(){
 
-    int arr[] = { 10, 20, -5, -15, 0, 54, -75, 13, -5, -1};
+    int arr[] = { 10, 20, -5, -15, 0, 54, -75, 13,-5, -1};
     int b = 10;
     cout<< b ;
     swapArray(arr, b);
