@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 void PrintArrayRow(int Array[][3], int row , int col ){
@@ -53,8 +54,40 @@ int main(){
 
 
 
+    // vector 1d array 
+
+    vector<int> n;
+    cout << "Printing an vector array: "<< endl; 
+    n.push_back(3);
+    n.push_back(3);
+    n.push_back(3000);
+    n.push_back(3);
+    n.push_back(10);
+
+    for (int i = 0; i < n.size(); i++)  
+    {
+        /* code */
+        cout<<n[i]<< " ";
+    }
+    
 
 
+    // vector 2d array 
+cout<<endl << "\nprinting 2d array in vector"<< endl;
+    vector < vector<int> > c(5 , vector<int>(10 , 3));
+
+    for (int  i = 0; i < c.size(); i++)
+    {
+       for (int j = 0; j < c[i].size(); j++)
+       {
+        cout<< c[i][j]<< " ";
+        
+       }
+       cout<< endl;
+       
+        
+    }
+    
 
 
 
