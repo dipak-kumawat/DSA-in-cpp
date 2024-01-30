@@ -1,68 +1,40 @@
-// Your First C++ Program
-
-#include <iostream>
+// C++ program to implement iterative Binary Search
+#include <bits/stdc++.h>
 using namespace std;
-int main() {
-    // int arr[5];
-    // int n = 6; 
-    // cout << "hello jo"<< endl ;
-    // for(int i = 0;  i<n; i++){
-    //     cout << "enter the value for index " << i << ":" ;
-    //     cin >>arr[i];
-    //     cout << endl;
-    // }
 
-    // cout << "printing an array"<<endl;
-    // for (int i = 0; i < n; i++)
-    // {
-    //     cout << arr[i] << " ";
-    // }
-    
-    // int arr[5];
-    // int n = 5;
-    // for(int i =0; i<n; i++){
-    //     cout<< "enter the number for index:" <<i << " ";
-    //     cin >> arr[i];
-    // }
-    // // printing the array 
-    // cout << "Array = [";
-    // for(int i =0; i<n; i++){
-    
-    //     cout<<arr[i] << " ";
-    // }
-    // cout << "]" << endl;
-    // int sum = 0 ;
-    // for(int i = 0; i<n; i++){
-    //     sum = sum + arr[i];
-    // }
-    // cout << "Sum of all array is: " << sum;
+// An iterative binary search function.
+int binarySearch(int arr[], int l, int r, int x)
+{
+    while (l <= r)
+    {
+        int m = l + (r - l) / 2;
 
-    // int arr[5]= {1, 2, 3, 4, 5 };
-    // int target = 5;
-    // int n = 5;
-    // for(int i = 0; i< n; i++){
-    //     if(target == arr[i]){
-    //         cout<< "target found";
-    //         break;
-    //     }
-    //     // else{
-    //     //     cout<<"Target nout found";
-    //     // }
-    // }
+        // Check if x is present at mid
+        if (arr[m] == x)
+            return m;
 
-    int arr[10] = {1, 1, 1, 0, 0 ,0, 0 ,1,1 , 1};
-    int zeroCount = 0;
-    int OneCount = 0;
-    int n = 10;
-    for (int i = 0; i<n; i++ ){
-        if(1 == arr[i]){
-            OneCount++;
-        }
-        if(0 == arr[i]){
-            zeroCount++;
-        }
+        // If x greater, ignore left half
+        if (arr[m] < x)
+            l = m + 1;
+
+        // If x is smaller, ignore right half
+        else
+            r = m - 1;
     }
-    cout<<"total number of zero: "<<zeroCount<<endl;
-    cout<< "Total Number o one: "<< OneCount<<endl;
+
+    // If we reach here, then element was not present
+    return -1;
+}
+
+// Driver code
+int main(void)
+{
+    int arr[] = {2, 3, 4, 10, 40};
+    int x = 10;
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int result = binarySearch(arr, 0, n - 1, x);
+    (result == -1)
+        ? cout << "Element is not present in array"
+        : cout << "Element is present at index " << result;
     return 0;
 }
