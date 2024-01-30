@@ -27,14 +27,24 @@ int binarySearch(int arr[], int l, int r, int x)
 }
 
 // Driver code
-int main(void)
+int main()
 {
-    int arr[] = {2, 3, 4, 10, 40};
-    int x = 10;
+    int arr[] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+    int x = 100;
     int n = sizeof(arr) / sizeof(arr[0]);
     int result = binarySearch(arr, 0, n - 1, x);
-    (result == -1)
-        ? cout << "Element is not present in array"
-        : cout << "Element is present at index " << result;
+    // (result == -1)?
+    //     cout << "Element is not present in array":
+    //     cout << "Element is present at index " << result;
+    // return 0;
+    if (result == -1)
+    {
+        cout << "Element is not present in array";
+    }
+    else
+    {
+        cout << "Element is present at index " << result;
+    }
+
     return 0;
 }
