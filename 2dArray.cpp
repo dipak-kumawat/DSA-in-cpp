@@ -83,17 +83,26 @@ int main()
 
     cout << "Printing SECOND diagonal : " << endl;
 
-    for (int i = 0; i < rows; i++)
+    int i = 0;
+    int j = cols - 1;
+    while (i < rows)
     {
-        for (int j = 0; j < cols; j++)
-        {
-            if (i >= j)
-            {
-                cout << newArray[i][j] << " ";
-            }
-        }
-        cout << endl;
+        cout << newArray[i][j] << " ";
+        i++;
+        j--;
     }
+
+    // for (int i = 0; i < rows; i++)
+    // {
+    //     for (int j = 0; j < cols; j++)
+    //     {
+    //         if (i >= j)
+    //         {
+    //             cout << newArray[i][j] << " ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
 
     // int arr[3][3] = {
     //     {1, 2, 3},
