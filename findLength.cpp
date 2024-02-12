@@ -21,5 +21,10 @@ int main()
     cin >> n;
     cout << "your name is : " << n<<endl;
     cout << "length of your name is " << length(n, 100);
+
+
+    for (in t i = 0; i < 6; i++){
+        cout <<n <<"\n";
+    }
     return 0;
 }
