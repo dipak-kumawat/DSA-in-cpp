@@ -9,11 +9,22 @@ int main(){
 
     string name;
 
-    cout << "Enter your name: ";
-    cin>> name;
+    // cout << "Enter your name: ";
+    // cin>> name;
 
-    cout  << "Your name is: "<< name ;
+    // cout  << "Your name is: "<< name << endl;
 
+    // for (int i = 0; i < name.length() -1; i++)
+    // {
+    //     /* code */
+    //     cout << "index of "<<i << " is "<< name[i] <<endl;
+    // }
+
+    // cout << "index of 6 element is : "<< name[6]<< endl;
+
+    // int number = (int)name[6];
+    // cout << "index of 6 element is : "<< number<< endl;
+    
 
 return 0;
 
