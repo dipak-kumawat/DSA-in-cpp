@@ -2,13 +2,14 @@
 // #include "hero.cpp"
 using namespace std;
 
-
-
-
-int main(){
+int main()
+{
 
     string name;
 
+    name = "My name is king khan";
+    name.rbegin();
+    cout << name;
     // cout << "Enter your name: ";
     // cin>> name;
 
@@ -24,32 +25,9 @@ int main(){
 
     // int number = (int)name[6];
     // cout << "index of 6 element is : "<< number<< endl;
-    
 
-return 0;
-
+    return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // // C++ program to implement iterative Binary Search
 // #include <bits/stdc++.h>
